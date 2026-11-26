@@ -1,0 +1,20 @@
+# Type conversion
+
+a = "10"
+b = "20.5"
+
+# String to integer
+x = int(a)
+print("String to Integer:", x, type(x))
+
+# String to float
+y = float(b)
+print("String to Float:", y, type(y))
+
+# Integer to float
+z = float(x)
+print("Integer to Float:", z, type(z))
+
+# Integer to string
+s = str(x)
+print("Integer to String:", s, type(s))
