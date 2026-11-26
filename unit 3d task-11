@@ -1,0 +1,23 @@
+# Global bank balance
+balance = 1000
+
+# Function to deposit money
+def deposit(amount):
+    global balance
+    balance += amount
+    print("Deposited Amount = ₹", amount)
+    print("Updated Balance = ₹", balance)
+
+# Function using local balance
+def local_update(amount):
+    balance = 500
+    balance += amount
+    print("Local Balance = ₹", balance)
+
+print("Initial Balance = ₹", balance)
+
+deposit(500)
+
+local_update(200)
+
+print("Final Account Balance = ₹", balance)
