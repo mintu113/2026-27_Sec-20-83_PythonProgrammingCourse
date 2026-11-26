@@ -1,0 +1,20 @@
+# Create a set
+my_set = {10, 20, 30, 40}
+
+print("Original Set:", my_set)
+
+# Membership testing
+print("20 in set:", 20 in my_set)
+print("50 not in set:", 50 not in my_set)
+
+# Add element
+my_set.add(50)
+print("After add:", my_set)
+
+# Remove element
+my_set.remove(20)
+print("After remove:", my_set)
+
+# Discard element
+my_set.discard(30)
+print("After discard:", my_set)
