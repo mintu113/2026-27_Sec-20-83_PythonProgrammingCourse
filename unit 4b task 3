@@ -1,0 +1,17 @@
+try:
+    # Read text from the user
+    text = input("Enter a number: ")
+
+    # Convert text into integer
+    num = int(text)
+
+except ValueError:
+    print("Error: Please enter a valid integer.")
+
+else:
+    # Print the square if no error occurs
+    print("Square:", num ** 2)
+
+finally:
+    # This block always executes
+    print("Program finished")
