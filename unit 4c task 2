@@ -1,0 +1,10 @@
+# Open the file in write mode
+file = open("output.txt", "w")
+
+# Write a line of text
+file.write("Welcome to Python Programming.")
+
+# Close the file
+file.close()
+
+print("Data successfully written to output.txt")
