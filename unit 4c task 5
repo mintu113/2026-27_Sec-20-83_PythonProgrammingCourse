@@ -1,0 +1,22 @@
+# Open the file in read mode
+file = open("sample.txt", "r")
+
+# Read the file content
+content = file.read()
+
+# Close the file
+file.close()
+
+# Replace Python with Java
+new_content = content.replace("Python", "Java")
+
+# Open the file in write mode
+file = open("sample.txt", "w")
+
+# Write the updated content
+file.write(new_content)
+
+# Close the file
+file.close()
+
+print("Word replaced successfully.")
