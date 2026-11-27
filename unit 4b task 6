@@ -1,0 +1,19 @@
+# Define a custom exception
+class InvalidSpeedError(Exception):
+    pass
+
+try:
+    # Read vehicle speed
+    speed = int(input("Enter vehicle speed (km/h): "))
+
+    # Check speed range
+    if speed < 0 or speed > 120:
+        raise InvalidSpeedError("Speed must be between 0 and 120 km/h.")
+
+    print("Valid vehicle speed:", speed, "km/h")
+
+except ValueError:
+    print("Error: Please enter a valid number.")
+
+except InvalidSpeedError as e:
+    print("Error:", e)
