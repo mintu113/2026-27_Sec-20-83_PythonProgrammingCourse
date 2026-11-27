@@ -1,0 +1,26 @@
+# Define a custom exception
+class InvalidMarksError(Exception):
+    pass
+
+try:
+    # Read marks from the user
+    marks = int(input("Enter student marks: "))
+
+    # Validate marks
+    if marks < 0 or marks > 100:
+        raise InvalidMarksError("Marks must be between 0 and 100.")
+
+    # Check Pass or Fail
+    if marks >= 40:
+        print("Result: Pass")
+    else:
+        print("Result: Fail")
+
+except ValueError:
+    print("Error: Please enter valid integer marks.")
+
+except InvalidMarksError as e:
+    print("Error:", e)
+
+finally:
+    print("Program finished.")
