@@ -1,0 +1,22 @@
+# Create a subject-marks dictionary
+subjects = {
+    "Python": 90,
+    "Java": 85,
+    "C": 80,
+    "DBMS": 95
+}
+
+# Print dictionary keys using a loop
+print("Subject Names:")
+for key in subjects.keys():
+    print(key)
+
+# Print dictionary values using a loop
+print("\nSubject Marks:")
+for value in subjects.values():
+    print(value)
+
+# Print dictionary items using a loop
+print("\nSubject and Marks:")
+for key, value in subjects.items():
+    print(key, ":", value)
