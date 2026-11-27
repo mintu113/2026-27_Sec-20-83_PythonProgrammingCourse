@@ -1,0 +1,16 @@
+# Create a student dictionary
+student = {
+    "name": "Rahul",
+    "age": 20,
+    "course": "Python Programming"
+}
+
+# Update the student's age
+student["age"] = 21
+
+# Add the student's city
+student["city"] = "Vijayawada"
+
+# Display the updated dictionary
+print("Updated Student Dictionary:")
+print(student)
