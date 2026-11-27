@@ -1,0 +1,19 @@
+# Open the source file in read mode
+source = open("sample.txt", "r")
+
+# Read the content
+content = source.read()
+
+# Close the source file
+source.close()
+
+# Open the destination file in write mode
+destination = open("copy.txt", "w")
+
+# Write the content into copy.txt
+destination.write(content)
+
+# Close the destination file
+destination.close()
+
+print("File copied successfully.")
